@@ -1,0 +1,31 @@
+package b7568;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Person p =new Person();
+		int n = sc.nextInt();
+		int[] arrK = new int[n];
+		int[] arrW = new int[n];
+		Person[] arrP = new Person[n]; 
+		int maxW=0;
+		int maxK=0;
+		for(int i = 0 ;i< n; i++) {
+			p.weight = sc.nextInt();
+			p.height = sc.nextInt();
+			arrP[i] = p;
+		}
+		for(int i = 0 ; i <n ;i++) {
+			System.out.println(arrP[i]);
+		}
+	}
+}
+class Person {
+	int weight;
+	int height;
+	Person(){
+		
+	}
+}

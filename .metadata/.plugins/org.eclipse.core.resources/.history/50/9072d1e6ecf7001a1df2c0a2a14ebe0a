@@ -1,0 +1,30 @@
+package b1018;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int cnt=0;
+		int n = sc.nextInt();
+		int m = sc.nextInt();
+		
+		char[][] board = new char[n][m];
+		
+		for(int i =0 ; i < n; i++ ) {
+			String str = sc.next();
+			for(int j = 0; j < m; j++) {
+				board[i][j] = str.charAt(j);
+			}
+		}
+		for(int i =0 ; i < n; i++ ) {
+		
+			for(int j = 0; j < m; j++) {
+				System.out.print(board[i][j]);
+			}
+			System.out.println();
+		}
+		
+	}
+}
+
