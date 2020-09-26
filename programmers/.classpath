@@ -7,5 +7,7 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="greedy"/>
+	<classpathentry kind="src" path="Exhaustive_Search"/>
+	<classpathentry kind="src" path="sort"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
