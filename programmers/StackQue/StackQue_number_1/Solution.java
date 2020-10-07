@@ -19,7 +19,6 @@ class Solution {
         	}
         	answer[i] = cnt;
         }
-       
         return answer;
     }
 }
