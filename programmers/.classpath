@@ -9,5 +9,9 @@
 	<classpathentry kind="src" path="greedy"/>
 	<classpathentry kind="src" path="Exhaustive_Search"/>
 	<classpathentry kind="src" path="sort"/>
+	<classpathentry kind="src" path="StackQue"/>
+	<classpathentry kind="src" path="Heap"/>
+	<classpathentry kind="src" path="PracticeProblem"/>
+	<classpathentry kind="src" path="Hash"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

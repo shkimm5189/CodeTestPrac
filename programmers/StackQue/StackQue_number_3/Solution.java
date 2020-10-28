@@ -44,10 +44,12 @@ public class Solution {
 				sum -= que.poll();
 			} else {	
 				if(sum + idx > weight) {
-					continue;
+					que.offer(0);
+					
 				} else {
 					que.offer(truck_weights[idx]);
 					sum += truck_weights[idx];
+					idx++;
 				}
 			}
 			if(idx == truck_weights.length)
