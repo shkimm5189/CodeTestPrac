@@ -1,0 +1,36 @@
+package 비밀지도1차_recheck;
+
+import java.util.HashMap;
+
+public class Solution {
+    public static String[] solution(int n, int[] arr1, int[] arr2) {
+        String[] answer = new String[n];
+        String[] arrs1 = new String[arr1.length];
+        String[] arrs2 = new String[arr2.length];
+        
+     
+        for(int i = 0 ; i < arr1.length; i++) {
+        	arrs1[i] = Integer.toBinaryString(arr1[i]);
+        }
+        for(int i = 0 ; i < arr1.length; i++) {
+        	arrs2[i] = Integer.toBinaryString(arr2[i]);
+        }
+        
+        for(int i = 0 ; i < n; i++) {
+        	for(int j = 0 ; j < n; j++) {
+        		if((arrs1[i].charAt(j) == '1') && (arrs1[i].charAt(j) == arrs2[i].charAt(j))) {
+        			answer[i]+= String.valueOf("#");
+        		} else {
+        			answer[i]+= String.valueOf(" ");
+        		}
+        	}
+        }
+        return answer;
+    }
+    
+    public static void main(String[] args) {
+    	int[] a = {9, 20, 28, 18, 11};
+    	int[] b = {30, 1, 21, 17, 28};
+		System.out.println(solution(5, a, b));
+	}
+}

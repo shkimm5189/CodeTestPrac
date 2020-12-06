@@ -11,7 +11,7 @@ public class Solution {
         int[] stu1 = {1,2,3,4,5};
         int[] stu2 = {2, 1, 2, 3, 2, 4, 2, 5};
         
-        int[] stu3 = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
+        
         int s1=0;
         int s2=0;
         int s3=0;

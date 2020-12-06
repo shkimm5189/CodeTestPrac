@@ -15,7 +15,7 @@ import java.util.List;
 public class Solution {
 	 public int solution(String numbers) {
 		List<Integer> list = new ArrayList<Integer>();
-	    
+	    int answer = 0;
 	    
 	    		
 	    

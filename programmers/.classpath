@@ -13,5 +13,7 @@
 	<classpathentry kind="src" path="Heap"/>
 	<classpathentry kind="src" path="PracticeProblem"/>
 	<classpathentry kind="src" path="Hash"/>
+	<classpathentry kind="src" path="programmers_month_codeTest"/>
+	<classpathentry kind="src" path="TechCourse"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
