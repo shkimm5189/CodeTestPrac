@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;kakaoIntern.solution&apos; to &apos;Solution&apos;&#x0A;- Original project: &apos;programmers&apos;&#x0A;- Original element: &apos;kakaoIntern.solution&apos;&#x0A;- Renamed element: &apos;kakaoIntern.Solution&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;solution&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/KakaoBlind&lt;kakaoIntern{solution.java[solution" matchStrategy="1" name="Solution" qualified="false" references="true" similarDeclarations="false" stamp="1609216232136" textual="false" version="1.0"/>
+</session>

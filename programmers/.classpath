@@ -15,5 +15,6 @@
 	<classpathentry kind="src" path="Hash"/>
 	<classpathentry kind="src" path="programmers_month_codeTest"/>
 	<classpathentry kind="src" path="TechCourse"/>
+	<classpathentry kind="src" path="KakaoBlind"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
