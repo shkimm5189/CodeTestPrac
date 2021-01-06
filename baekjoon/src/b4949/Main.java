@@ -21,7 +21,7 @@ package b4949;
 입력의 종료조건으로 맨 마지막에 점 하나(".")가 들어온다.
 출력
 각 줄마다 해당 문자열이 균형을 이루고 있으면 "yes"를, 아니면 "no"를 출력한다.
-*/
+ */
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -34,40 +34,43 @@ import java.util.Stack;
 public class Main {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
-	
-		Stack<Character> st = new Stack<>();
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		Stack<String> st = new Stack<>();
 		while(true) {
-			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+			
+			st.clear();
 			String inputStr = br.readLine();
+			// . 입력이 들어오면 프로그램 종료
 			if(inputStr.equals(".")) {
-				return ;
+				bw.flush();
+				bw.close();
+				break;
 			}
+			String[] splitStr = inputStr.split("");
+			for(String str : splitStr) {
+				if( str.equals("(") || str.equals("[") ) {
 
-			for(int i = 0 ; i < inputStr.length(); i++) {
-				char inChar = inputStr.charAt(i);
-				if(inChar == '.') {
-					if(st.isEmpty()) {
+					st.push(str);
+				} else if(!st.empty() && str.equals(")") && st.peek().equals("(") ) {
+
+					st.pop();
+				} else if(!st.empty() && str.equals("]") && st.peek().equals("[") ) {
+
+					st.pop();
+
+				} else if( str.equals("]") || str.equals(")") ) {
+
+					st.push(str);
+				} else if(str.equals(".")) {
+					if(st.empty()) {
 						bw.write("yes\n");
 					} else {
 						bw.write("no\n");
 					}
-					st.clear();
-					bw.flush();
-				} else if(inChar=='(' || inChar=='[') {
-					st.push(inChar);
-				} else if(inChar==')' || inChar==']'){
-					if(!st.isEmpty()) {
-						if( (st.peek() == '(' && inChar == ')') ||
-								(st.peek() == '[' && inChar==']') ) {
-							st.pop();
-						} 
-					} else {
-						st.push(inChar);
-					}
 				}
 			}
-			
+
 		}
+
 	}
 }
