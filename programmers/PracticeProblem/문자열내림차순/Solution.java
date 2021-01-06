@@ -14,8 +14,8 @@ import java.util.Comparator;
 public class Solution {
 	public String solution(String s) {
 	
-	
-		return answer;
+		return "";
+		
 	}
 
 }
