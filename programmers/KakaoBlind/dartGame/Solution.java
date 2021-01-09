@@ -5,29 +5,27 @@ import java.util.Stack;
 class Solution{
     public static int solution(String dartResult) {
     	Stack<Integer> st = new Stack<>();
-    	String chk  ="";
+    	char chk;
+    	
     	for(int i =0 ;i<dartResult.length() ; i++) {
-    		int c = dartResult.charAt(i);
-    		if(c >= '0' && c <= '9') {
-                chk += String.valueOf(c);
-    			st.push(Integer.parseInt(chk));
+    		chk = dartResult.charAt(i);
+    		
+    		if(chk >= '0' && chk <= '9') {
+    			
     		} else {
     			int tmp = 0;
     			switch(chk) {
-    			case "S":
-    				chk = "";
+    			case 'S':
     				break;
-    			case "D":
+    			case 'D':
     				tmp = (int) Math.pow(st.pop(), 2);
     				st.push(tmp);
-    				chk = "";
     				break;
-    			case "T":
+    			case 'T':
     				tmp = (int) Math.pow(st.pop(), 3);
     				st.push(tmp);
-    				chk = "";
     				break;
-    			case "*":
+    			case '*':
     				int firScore = 0;
     				int secScore = 0;
     				firScore = st.pop() * 2;
@@ -38,7 +36,7 @@ class Solution{
     				}
     				st.push(firScore);
     				break;
-    			case "#":
+    			case '#':
     				tmp = -(st.pop());
     				st.push(tmp);
     				break;

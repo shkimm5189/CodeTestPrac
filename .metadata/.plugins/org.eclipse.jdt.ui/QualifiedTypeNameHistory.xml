@@ -6,9 +6,6 @@
     <fullyQualifiedTypeName name="jdk.internal.jline.internal.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.io.Reader"/>
     <fullyQualifiedTypeName name="java.awt.print.Printable"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
-    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
     <fullyQualifiedTypeName name="java.lang.Class"/>
     <fullyQualifiedTypeName name="b7568.Person"/>
     <fullyQualifiedTypeName name="programmers.test.Monster"/>
@@ -16,7 +13,6 @@
     <fullyQualifiedTypeName name="java.awt.List"/>
     <fullyQualifiedTypeName name="카카오겨울개발자인턴십_1.Solution"/>
     <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Queue"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.code.Attribute.Array"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
@@ -24,7 +20,6 @@
     <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.serializer.ToUnknownStream"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
-    <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="p6.Solution"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -34,9 +29,20 @@
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
     <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
     <fullyQualifiedTypeName name="java.util.Vector"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+    <fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="dartGame.SolutionL"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
