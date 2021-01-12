@@ -1,4 +1,4 @@
-package b1920;
+package b1260;
 
 public class Main {
 
