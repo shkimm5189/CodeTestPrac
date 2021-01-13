@@ -3,6 +3,7 @@ package b1260;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Main {
 	static int board[][];
@@ -25,13 +26,14 @@ public class Main {
 		
 		visited = new boolean[N+1];
 		dfs(start);
-		
+		System.out.println();
 		visited = new boolean[N+1];
 		bfs(start);
 	}
+	
 	static void dfs(int start) {
 		visited[start] = true;
-		System.out.println(start + " " );
+		System.out.print(start + " " );
 		if(start == board.length) {
 			return ;
 		}
@@ -42,11 +44,13 @@ public class Main {
 			}
 		}
 	}
+	
+	
 	static void bfs(int start) {
 		Queue<Integer> que = new LinkedList<Integer>();
 		que.offer(start);
 		visited[start] = true;
-		System.out.println(start+ " ");
+		System.out.print(start+ " ");
 		
 		while(!que.isEmpty()) {
 			int temp = que.peek();
@@ -55,7 +59,7 @@ public class Main {
 				if(board[temp][i] == 1 && visited[i] == false) {
 					que.offer(i);
 					visited[i] = true;
-					System.out.println(i+ " ");
+					System.out.print(i+ " ");
 				}
 			}
 		}
