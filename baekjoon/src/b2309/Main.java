@@ -32,7 +32,7 @@ public class Main {
 			hight[i] = Integer.parseInt(br.readLine());
 			sum += hight[i];
 		}
-		System.out.println(sum);
+
 		for(int i = 0 ; i < hight.length; i++) {
 			for(int  j = 0 ; j < hight.length; j++ ) {
 				if(i==j) {
@@ -41,7 +41,6 @@ public class Main {
 				if( sum - hight[i] - hight[j] == 100) {
 					hight[i] = 0;
 					hight[j] = 0;
-
 				}
 			}
 		}
