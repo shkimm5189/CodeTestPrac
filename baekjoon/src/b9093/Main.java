@@ -22,9 +22,9 @@ public class Main {
 					char temp = str[j].charAt(z);
 					sb.append(temp);
 				}
-				
+				sb.append(" ");
 			}
-			
+			sb.append("\n");
 		}
 		bw.write(sb.toString());
 		br.close();
