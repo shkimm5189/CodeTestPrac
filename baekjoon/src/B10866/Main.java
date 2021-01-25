@@ -34,27 +34,27 @@ public class Main {
 				break;
 			case "pop_front":
 				bw.write(deque.pop_front()+"\n");
-				
+
 				break;
 			case "pop_back":
 				bw.write(deque.pop_back()+"\n");
-				
+
 				break;
 			case "size":
 				bw.write(deque.size()+"\n");
-				
+
 				break;
 			case "empty":
 				bw.write(deque.empty()+"\n");
-				
+
 				break;
 			case "front":
 				bw.write(deque.front()+"\n");
-				
+
 				break;
 			case "back":
 				bw.write(deque.back()+"\n");
-				
+
 				break;
 			}
 		}
@@ -95,7 +95,7 @@ class Dequeue{
 		}
 		size++;
 	}
-	
+
 	//push_back X: 정수 X를 덱의 뒤에 넣는다.
 	public void push_back(int data) {
 		Node newNode = new Node(data);
@@ -112,34 +112,44 @@ class Dequeue{
 		}
 		size++;
 	}
-	
+
 	//pop_front: 덱의 가장 앞에 있는 수를 빼고, 그 수를 출력한다. 만약, 덱에 들어있는 정수가 없는 경우에는 -1을 출력한다.
 	public int pop_front() {
 		if(empty() == 1) {
 			return -1;
 		} else {
 			int temp = front.data;
-			
-			front = front.next;
-			front.before = null;
+			if(front.next == null) {
+				front =null;
+				back=null;
+			}else {
+				front = front.next;
+				front.before = null;
+			}
 			size--;
 			return temp;
 		}
-		
+
 	}
-	
+
 	//pop_back: 덱의 가장 뒤에 있는 수를 빼고, 그 수를 출력한다. 만약, 덱에 들어있는 정수가 없는 경우에는 -1을 출력한다.
 	public int pop_back() {
 		if(empty() == 1) {
 			return -1;	
 		} else { 
 			int temp = back.data;
-			back = back.before;
+			if(back.before ==null) {
+				front = null;
+				back = null;
+			} else {
+				back = back.before;
+				back.next = null;
+			}
 			size--;
 			return temp;
 		}
 	}
-	
+
 	//size: 덱에 들어있는 정수의 개수를 출력한다.
 	public int size() {
 		if(size <= 0) {
@@ -147,7 +157,7 @@ class Dequeue{
 		}
 		return size;
 	}
-	
+
 	//empty: 덱이 비어있으면 1을, 아니면 0을 출력한다.
 	public int empty() {
 		if(front == null || back == null) {
@@ -156,7 +166,7 @@ class Dequeue{
 			return 0;
 		}
 	}
-	
+
 	//front: 덱의 가장 앞에 있는 정수를 출력한다. 만약 덱에 들어있는 정수가 없는 경우에는 -1을 출력한다.
 	public int front() {
 		if(front == null) {
@@ -165,7 +175,7 @@ class Dequeue{
 			return front.data;
 		}
 	}
-	
+
 	//back: 덱의 가장 뒤에 있는 정수를 출력한다. 만약 덱에 들어있는 정수가 없는 경우에는 -1을 출력한다.
 	public int back() {
 		if(back == null) {
