@@ -1,17 +1,23 @@
-package b11654;
+package b11720;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 
 public class Main {
 	public static void main(String[] args) throws IOException {
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		int a = br.readLine().charAt(0);
-		System.out.println(a);
+		int result = 0 ;
+		int repeat = Integer.parseInt(br.readLine());
+		String[] array = br.readLine().split("");
 		
+		for(String s : array) {
+			result += Integer.parseInt(s);
 		}
+		
+		System.out.println(result);
+		
+	}
 }
