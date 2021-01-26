@@ -28,7 +28,7 @@ public class Main {
 		}
 		
 		for( String s : hash.keySet()) {
-			System.out.println(hash.get(s));
+			System.out.print(hash.get(s)+" ");
 		}
 	}
 }
