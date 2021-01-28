@@ -20,11 +20,12 @@ public class Main {
 		int repeat = Integer.parseInt(br.readLine());
 		int ans = 0 ;
 		Queue<String> que;
-		
+		// 입력 받은만큼 반복한다.
 		while(repeat-- > 0) {
-
 			String[] s = br.readLine().split("");
 			 que = new LinkedList<String>();
+			 
+			// 그룹 문자 별로 쪼갠다.
 			for(int i = 0 ; i < s.length; i++) {
 				String temp = s[i];
 				if(i+1 < s.length && temp.equals(s[i+1]) ) {
@@ -33,6 +34,7 @@ public class Main {
 					que.offer(temp);
 				}	
 			}
+			// 쪼개진 문자를 큐에서 찾아 다시 등장하면 그룹문자가 아니다.
 			boolean ch = true;
 			while(!que.isEmpty()) {
 				if(que.contains(que.poll())) {
@@ -40,6 +42,7 @@ public class Main {
 					break;
 				}
 			}
+			//그룹 문자가 맞으면카운트
 			if(ch) {
 				ans++;
 			}
