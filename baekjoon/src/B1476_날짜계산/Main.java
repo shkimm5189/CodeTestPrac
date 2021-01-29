@@ -7,6 +7,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
+/*
+ * E,S,M을 다이얼로 생각하여 원형 큐로 구현하고
+ * cnt를 증가시키면서 원하는 값을 찾아낸다.
+ */
 
 
 public class Main {
