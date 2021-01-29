@@ -4188,3 +4188,6 @@ Binding(ALT+SHIFT+X R,
 
 !ENTRY org.eclipse.launchbar.core 2 0 2021-01-29 14:48:03.393
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.jface.text 2 0 2021-01-29 15:53:41.769
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
