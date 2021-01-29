@@ -32,16 +32,11 @@ public class Main {
 			sb.append('\n');
 			return;
 		}
-		
 		for(int i = 0 ; i < N ; i++) {
 			if(!visited[i]) {
-				
 				visited[i] = true;
-			
 				arr[depth] = i+1;
-				
 				dfs(N,M,depth+1);
-				
 				visited[i] = false;
 			}
 		}
