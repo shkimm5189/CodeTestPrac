@@ -23,7 +23,7 @@ public class Main {
 		for(int i = 0 ; i <s.length;i++) {
 			hash.put(s[i], hash.get(s[i])+1);
 		}
-		System.out.println();
+		
 		for(String key : hash.keySet()){
 			System.out.println(hash.get(key));
 		}
