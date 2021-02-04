@@ -32,7 +32,7 @@ public class Main {
 				}
 			}
 		}
-		while(!(oneLen == 0) || (twoLen == 0 )) {
+		while(!(oneLen == 0 || twoLen == 0 )) {
 			if(strOne.charAt(oneLen-1) == strTwo.charAt(twoLen-1) ) {
 				sb.append(strOne.charAt(oneLen-1));
 				oneLen--;
