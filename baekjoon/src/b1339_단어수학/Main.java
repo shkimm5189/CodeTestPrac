@@ -12,22 +12,10 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Stack<String> stack = new Stack<>();
-		HashMap<String, Integer> hash = new HashMap<String, Integer>();
-		int repeat = Integer.parseInt(br.readLine());
 		
+		int repeat = Integer.parseInt(br.readLine());
 		for(int i = 0 ; i < repeat ; i++ ) {
-			String[] str = br.readLine().split("");
-			int base  = str.length;
-			for(String s : str) {
-				if(hash.containsKey(s)) {
-					continue;
-				} else {
-					hash.put(s, base--);
-				}
-			}
-			for(String key : hash.keySet()) {
-				System.out.println(hash.get(key));
-			}
+			
 		}
 		
 		
