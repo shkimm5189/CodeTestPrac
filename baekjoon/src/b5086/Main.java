@@ -17,9 +17,7 @@ public class Main {
 			if(numOne == 0 && numTwo == 0) {
 				break;
 			}
-			
-
-//첫 번째 숫자가 두 번째 숫자의 약수이다.
+			//첫 번째 숫자가 두 번째 숫자의 약수이다.
 			if((numTwo % numOne) == 0) {
 				System.out.println("factor");
 			} else if((numTwo/numOne)==0 && (numOne%numTwo) == 0) {
@@ -27,9 +25,9 @@ public class Main {
 			} else {
 				System.out.println("neither");
 			}
-//첫 번째 숫자가 두 번째 숫자의 배수이다.
+			//첫 번째 숫자가 두 번째 숫자의 배수이다.
 			
-//첫 번째 숫자가 두 번째 숫자의 약수와 배수 모두 아니다.
+			//첫 번째 숫자가 두 번째 숫자의 약수와 배수 모두 아니다.
 		}
 		
 	}
