@@ -8,29 +8,27 @@ import java.io.InputStreamReader;
 public class Main {
 	
 	
-	static int min;
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int val = Integer.parseInt(br.readLine());
-		min = val;
-		dfs(val,0);
+		int[] dp = new int[val+1];
 		
-		System.out.println("result "+min);
+		dp[0] = 0;
+		dp[1] = 0;
+		
+		for(int i = 2 ; i <= val; i++) {
+			dp[i] = dp[i-1]+1;
+			if(i%3 ==0 ) {
+				dp[i] = Math.min(dp[i], dp[i/3]+1) ;
+			}
+			if(i%2 ==0 ) {
+				dp[i] = Math.min(dp[i], dp[i/2]+1) ;
+			}
+		}
+		
+		System.out.println(dp[val]);
 	}
 	
-	static void dfs(int val, int depth) {
-		if(val == 1) {
-			min = Math.min(min ,depth);
-			return ;
-		}
-		if(val%3 == 0) {
-			dfs(val/3,depth+1);
-		}
-		if(val%2 == 0) {
-			
-			dfs(val/2,depth+1);
-		}
-		dfs(val-1,depth+1);
-	}
+	
 }
