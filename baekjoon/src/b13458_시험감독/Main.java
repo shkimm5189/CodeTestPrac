@@ -24,6 +24,10 @@ long cnt = 0;
 		for(int i = 0 ; i < classRoom.length;i++) {
 			classRoom[i] -= fir;
 			cnt++;
+			if(classRoom[i] < 0) {
+				continue;
+			}
+			
 			cnt += classRoom[i]/sec;
 			if(classRoom[i]%sec != 0) {
 				cnt++;
