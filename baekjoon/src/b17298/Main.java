@@ -26,19 +26,8 @@ public class Main {
 			arrNum[i] = Integer.parseInt(st.nextToken());
 		}
 		
-		for(int i = 0 ; i < arrNum.length-1; i++) {
-			que = new LinkedList<>();
-			for(int j = i+1 ; j < arrNum.length;j++) {
-				if(arrNum[i] < arrNum[j]) {
-					que.offer(arrNum[j]);
-				}
-			}
-			if(que.isEmpty()) {
-				sb.append(-1+" ");
-			} else {
-				sb.append(que.poll()+" ");
-			}
-		}
+	
+		
 		sb.append(-1);
 		
 		System.out.println(sb.toString());
