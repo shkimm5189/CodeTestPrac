@@ -31,10 +31,10 @@ public class Main {
 			if(Collections.binarySearch(noHear, find) >= 0) {
 				
 				result.add(find);
-				cnt++;
+				
 			}
 		}
-		System.out.println(cnt);
+		System.out.println(result.size());
 		Collections.sort(result);
 		for(String s : result) {
 			System.out.println(s);
