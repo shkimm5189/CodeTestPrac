@@ -22,6 +22,10 @@ class Council implements Comparable<Council>{
 	public int compareTo(Council o) {
 		if(this.endT > o.endT) {
 			return 1;
+		} else if(this.endT == o.endT) {
+			if(this.startT > o.startT) {
+				return 1;
+			}
 		}
 		return -1;
 	}
@@ -49,9 +53,7 @@ public class Main {
 
 		
 		}
-		for(int i= 0 ; i < council.length; i++) {
-			System.out.println(council[i].startT);
-		}
+
 		System.out.println(cnt);
 	}
 }
