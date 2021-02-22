@@ -30,9 +30,11 @@ public class Main {
 		Queue<Integer> que = new LinkedList<Integer>();
 		
 		que.offer(N);
+		chk[N] = 1;
 		
 		while(!que.isEmpty()) {
 			int temp = que.poll();
+			
 			for(int i =0 ; i < 3; i++) {
 				int next;
 				if(i == 0 ) {
