@@ -8,31 +8,25 @@ import java.util.StringTokenizer;
 
 public class Main {
 	static int[] dp;
-
+	
 
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		int repeat = Integer.parseInt(br.readLine());
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
-		dp = new int[repeat+1];
-
+		dp = new int[repeat];
+		int[] arr = new int[repeat];
 		for(int i = 0 ; i < repeat; i++) {
-			dp[i] = Integer.parseInt(st.nextToken());
+			arr[i] = Integer.parseInt(st.nextToken());
 		}
-		for(int i = 0 ; i < repeat; i++) {
-			int temp = dp[i];
-			int max = temp;
-			for(int j = i ; j < repeat ; j++) {
-				temp += dp[j];
-				max = Math.max(max, temp + dp[j]);
-				
-			}
-			dp[i] = max;
+		dp[0] = arr[0];
+		int max = dp[0];
+		
+		for( int i = 1 ; i < dp.length; i++) {
+			dp[i] = Math.max(dp[i-1] + arr[i], arr[i] );
+			max = Math.max(max, dp[i]);
 		}
-		Arrays.sort(dp);
-		for(int i : dp) {
-			System.out.println(i);
-		}
+		System.out.println(max);
 	}
 }
