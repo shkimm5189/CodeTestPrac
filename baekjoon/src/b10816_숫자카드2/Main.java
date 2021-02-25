@@ -17,7 +17,7 @@ public class Main {
 		while(st.hasMoreTokens()) {
 			int temp = Integer.parseInt(st.nextToken());
 			if(!hash.containsKey(temp)) {
-				hash.put(temp, 0);
+				hash.put(temp, 1);
 			} else {
 				hash.put(temp, hash.get(temp)+1);
 			}
