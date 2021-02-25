@@ -18,11 +18,7 @@ class Person {
 		this.age = age;
 		this.name = name;
 	}
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return this.age+ " "+this.name;
-	}
+	
 	
 }
 public class Main {
@@ -48,10 +44,10 @@ public class Main {
 				return -1;
 			}
 		});
+		StringBuilder sb = new StringBuilder();
 		for(Person p : person) {
-			System.out.println(p.registNum);
-			System.out.println(p.toString());
+			sb.append(p.age).append(" ").append(p.name).append("\n");
 		}
-		
+		System.out.println(sb);
 	}
 }
