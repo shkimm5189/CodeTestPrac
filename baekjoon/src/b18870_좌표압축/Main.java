@@ -31,7 +31,7 @@ public class Main {
 				continue;
 			}
 		}
-		
+		sortedPoint = null;
 		for(int i : point) {
 			sb.append(hash.get(i)).append(" ");
 		}
