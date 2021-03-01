@@ -15,6 +15,6 @@ public class Main {
 		while(sum <= S) {
 			sum += ++n;
 		}
-		System.out.println(n);
+		System.out.println(n-1);
 	}
 }
