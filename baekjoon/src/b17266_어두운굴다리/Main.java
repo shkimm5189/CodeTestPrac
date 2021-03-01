@@ -15,7 +15,7 @@ public class Main {
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
 		int[] road = new int[M];
 		
-		for(int i = 0 ; i < M;i++) {
+		for(int i = 0 ; i < M;i++) 
 			road[i] = Integer.parseInt(st.nextToken());
 		}
 		int max = road[0];
