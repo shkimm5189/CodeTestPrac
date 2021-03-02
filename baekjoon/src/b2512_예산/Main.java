@@ -14,17 +14,25 @@ public class Main {
 		int N = Integer.parseInt(br.readLine());
 		int[] cost = new int[N];
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
+		int sum = 0;
+		int max = 0;
 		for(int i = 0 ; i < N; i++) {
 			cost[i] = Integer.parseInt(st.nextToken());
+			max = Math.max(max, cost[i]);
+			sum += cost[i];
 		}
 		int limit = Integer.parseInt(br.readLine());
 		
 		int start = 0 ;
 		int end = limit;
 		int ans = 0;
+		if(sum <= limit) {
+			System.out.println(max);
+			return ;
+		}
 		while(true) {
 			int mid = (start+end)/2;
-			int sum = 0;
+			sum = 0;
 			if(start == mid) {
 				break;
 			}

@@ -17,29 +17,19 @@ import java.util.StringTokenizer;
 //용사와 악당의 전투 결과 즉, 우주 멸망을 막았으면 YES, 아니면 NO를 출력하시오.
 public class Main {
 	public static void main(String[] args) throws IOException{
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int humanCnt = 0 ;
-		int aliCnt = 0;
-		String[] str = br.readLine().split("");
-		for(String s : str) {
-			
-			
-			if(s.equals("(")) {
-				humanCnt++;
-				
-			} else if(s.equals(")")){
-				aliCnt++;
-				
+		int n = 0;
+		int k = 0;
+		while(true) {
+			n++;
+			if((n%2) == 0) {
+				k+=n;
+			} else {
+				k -=n;
+			}
+			if(n==10) {
+				break;
 			}
 		}
-		
-		if(humanCnt == aliCnt) {
-			System.out.println("YES");
-		}
-		else {
-			System.out.println("NO");
-		}
-		
-		
+		System.out.println(k);
 	}
 }
