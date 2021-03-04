@@ -3,6 +3,7 @@
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588147117323_0" label="Java Main Sources" name="Java Main Sources">
 <item elementID="=baekjoon/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=baekjoon/BruteForceAL" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=baekjoon/FastCampus" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=programmers/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=programmers/greedy" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=programmers/Exhaustive_Search" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
