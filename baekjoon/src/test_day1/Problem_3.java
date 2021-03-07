@@ -9,5 +9,7 @@ public class Problem_3 {
 			
 		}
 		System.out.println("max = "+ max);
+		
+		
 	}
 }

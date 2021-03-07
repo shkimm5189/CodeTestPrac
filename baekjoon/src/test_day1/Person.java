@@ -9,6 +9,7 @@ public class Person	{
 		this.name = name;
 		this.isMarried = isMarried;
 		this.numberOfChildren = numerOfChildren;
+		
 	}
 	public int getAge() {
 		return age;

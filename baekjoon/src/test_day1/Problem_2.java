@@ -26,6 +26,8 @@ public class Problem_2 {
 		Book book = Book.getIntance();
 		System.out.println(book.id+""+book.name);
 		Book.setInstance(1, "kim");
+		
+		
 		System.out.println(book.id+""+book.name);
 	}
 }
