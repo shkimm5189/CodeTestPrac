@@ -23,7 +23,7 @@ public class Main {
 			
 			possibleDay = possibleDay * L;
 			
-			possibleDay = possibleDay + (V%P);  
+			possibleDay = possibleDay + Math.min(L, (V%P)) ;  
 			sb.append("Case "+ cnt+": "+possibleDay+"\n");
 		}
 		System.out.println(sb);
